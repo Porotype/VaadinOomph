@@ -17,6 +17,10 @@
         key="folderName.macosx">
       <value>VaadinStudio</value>
     </detail>
+    <detail
+        key="imageURI">
+      <value>https://raw.githubusercontent.com/Porotype/VaadinOomph/master/VaadinStudio.png</value>
+    </detail>
   </annotation>
   <setupTask
       xsi:type="setup:CompoundTask"
@@ -34,25 +38,143 @@
         xsi:type="setup.p2:P2Task"
         label="${scope.product.label} (${scope.product.version.label})">
       <requirement
-          name="org.eclipse.platform.ide"/>
+          name="org.eclipse.platform.feature.group"
+          versionRange="[4.6.0,4.7.0)"/>
       <requirement
-          name="org.eclipse.platform.feature.group"/>
+          name="org.eclipse.rcp.feature.group"
+          versionRange="[4.6.0,4.7.0)"/>
       <requirement
-          name="org.eclipse.rcp.feature.group"/>
+          name="org.eclipse.cft.server.core.feature.feature.group"/>
       <requirement
-          name="epp.package.jee"/>
+          name="org.eclipse.cft.server.ui.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.common.doc.user.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.connectivity.doc.user.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.connectivity.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.doc.user.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.intro.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.modelbase.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.sqldevtools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.sqltools.doc.user.feature.group"/>
+      <requirement
+          name="org.eclipse.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.egit.mylyn.feature.group"/>
+      <requirement
+          name="org.eclipse.jdt.feature.group"/>
+      <requirement
+          name="org.eclipse.jpt.common.eclipselink.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jpt.common.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jpt.dbws.eclipselink.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jpt.jaxb.eclipselink.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jpt.jaxb.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jpt.jpa.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jsf.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.common.fproj.enablement.jdt.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.enterprise_ui.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.server_adapters.ext.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.server_adapters.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.server_ui.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.web_ui.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.webpageeditor.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.ws.axis2tools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.ws.cxf.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.ws.jaxws.dom.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.logback.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.wtp.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.wtp.jaxrs.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.wtp.jpa.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.context_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.ide_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.java_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.pde.feature.group"/>
+      <requirement
+          name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.useractions.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.wst.common.fproj.feature.group"/>
+      <requirement
+          name="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.wst.jsdt.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.wst.server_adapters.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.wst.web_ui.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.wst.xml_ui.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.wst.xsl.feature.feature.group"/>
       <requirement
           name="com.vaadin.designer.eclipse.feature.group"/>
       <requirement
           name="com.vaadin.integration.eclipse.feature.group"/>
       <requirement
           name="runjettyrun_feature.feature.group"/>
+      <requirement
+          name="runjettyrun_feature_support_jetty93.feature.group"/>
       <repository
           url="https://vaadin.com/eclipse"/>
       <repository
-          url="http://download.eclipse.org/releases/neon"/>
-      <repository
           url="http://download.eclipse.org/technology/epp/packages/neon"/>
+      <repository
+          url="http://download.eclipse.org/releases/neon/201609281000"/>
       <repository
           url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
       <repository
@@ -60,5 +182,5 @@
     </setupTask>
     <description>Vaadin Studio for Neon.</description>
   </version>
-  <description>Vaadin Studio is preconfigured for web application development with Vaadin.</description>
+  <description>Vaadin Studio streamlines web application development with Vaadin.</description>
 </setup:Product>
