@@ -19,11 +19,17 @@
     </detail>
   </annotation>
   <setupTask
+      xsi:type="setup:CompoundTask"
+      name="User Preferences">
+    <annotation
+        source="http://www.eclipse.org/oomph/setup/UserPreferences"/>
+  </setupTask>
+  <setupTask
       xsi:type="setup:InstallationTask"
       id="installation"/>
   <version name="neon"
       label="Neon"
-      requiredJavaVersion="1.7">
+      requiredJavaVersion="1.8">
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="${scope.product.label} (${scope.product.version.label})">
@@ -39,6 +45,8 @@
           name="com.vaadin.designer.eclipse.feature.group"/>
       <requirement
           name="com.vaadin.integration.eclipse.feature.group"/>
+      <requirement
+          name="runjettyrun_feature.feature.group"/>
       <repository
           url="https://vaadin.com/eclipse"/>
       <repository
@@ -47,6 +55,8 @@
           url="http://download.eclipse.org/technology/epp/packages/neon"/>
       <repository
           url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
+      <repository
+          url="http://xzer.github.io/run-jetty-run-updatesite/nightly/"/>
     </setupTask>
     <description>Vaadin Studio for Neon.</description>
   </version>
